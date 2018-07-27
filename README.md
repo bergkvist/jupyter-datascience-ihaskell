@@ -1,5 +1,8 @@
 # Jupyter Datascience Notebook with IHaskell
 
+GitHub : https://github.com/bergkvist/jupyter-datascience-ihaskell  
+Docker Hub : https://hub.docker.com/r/bergkvist/jupyter-datascience-ihaskell/
+
 ## Why?
 The image is about 10 GB in total, but you get support for Python 3, Julia, R and Haskell right out of the box. (And a ton of libraries)
 
@@ -10,7 +13,7 @@ Building the IHaskell image directly, it turned out to be even bigger in size, b
 ```
 $ docker run \
 	-p 8888:8888 \
-	-v notebooks:/home/jovyan/:rw
+	-v notebooks:/home/jovyan/:rw \
 	bergkvist/jupyter-datascience-ihaskell
 ```
 

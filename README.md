@@ -13,9 +13,11 @@ Building the IHaskell image directly, it turned out to be even bigger in size, b
 ```
 $ docker run \
 	-p 8888:8888 \
-	-v notebooks:/home/jovyan/:rw \
+	-v notebooks:/home/jovyan/work:rw \
 	bergkvist/jupyter-datascience-ihaskell
 ```
+
+Note that only the contents of the /home/jovyan/work/ folder is persistent between restarts.
 
 ## Using the image :
 NOTE: you can use the same options as the original jupyter/datascience-notebook image. However, you will need to start the notebook with stack exec for IHaskell to work properly in jupyter lab.
